@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #F3F3F3;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.icon{
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+.input{
+    border: none;
+}
+
+.input:focus{
+    outline: none;
+}

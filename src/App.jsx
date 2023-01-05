@@ -1,12 +1,20 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import './App.css';
-import { Card } from './Components/Card/Card';
+import { Header } from './Components/Header/Header';
+import { Body } from './module/Body/Body';
+import { Search } from './module/Search/Search';
+import { store } from './store';
 
 function App() {
   return (
-    <div className='App'>
-      <Card />
-    </div>
+    <Provider store={store}>
+      <div className='App'>
+        <Header />
+        <Search />
+        <Body />
+      </div>
+    </Provider>
   );
 }
 

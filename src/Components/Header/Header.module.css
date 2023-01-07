@@ -56,11 +56,16 @@
 }
 
 .icon{
-    fill: #9B9B9B;;
+    fill: #9B9B9B;
+    cursor: pointer;
 }
 
 .cart{
     fill: none;
+}
+
+.icon:hover{
+    transform: scale(1.1);
 }
 
 .line{

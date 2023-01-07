@@ -1,0 +1,27 @@
+._{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.cartTotal{
+    padding: 0;
+}
+
+.cartTotal li{
+    display: flex;
+    list-style-type: none;
+    align-items: flex-end;
+}
+
+.cartTotal div{
+    position: relative;
+    top: -0.25rem;
+    flex: 1;
+    height: 1px;
+    border-bottom: 1px dashed #DFDFDF;
+}
+
+
+

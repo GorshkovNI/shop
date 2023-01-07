@@ -1,0 +1,20 @@
+._{
+    position: relative;
+    border-radius: 1rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.big{
+    width: 20.3rem;
+}
+
+.primary{
+    height: 3.3rem;
+    background-color: #9DD558;
+    color: white;
+}
+
+._:hover{
+    filter: brightness(1.05);
+}

@@ -4,11 +4,11 @@ import { CartBody } from './CartBody/CartBody';
 import { CartFooter } from './CartFooter/CartFooter';
 import { CartHeader } from './CartHeader/CartHeader';
 
-export const Cart = () => {
+export const Cart = ({ onCartVisible }) => {
   return (
     <div className={styles.overlay}>
       <div className={styles.wrapper}>
-        <CartHeader />
+        <CartHeader closeCart={onCartVisible} />
         <CartBody className={styles.cartBody} />
         <CartFooter />
       </div>

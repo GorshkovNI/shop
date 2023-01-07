@@ -3,9 +3,9 @@ import styles from './Card.module.css';
 import { Icon } from '../Icons/Icon';
 import { formatMoney } from '../../utils/formatMoney';
 
-export const Card = ({ price, describe, photo }) => {
+export const Card = ({ id, price, describe, photo, addInCart, selected }) => {
   return (
-    <div className={styles._}>
+    <div className={styles._} id={id}>
       <div className={styles.wrapper}>
         <div className={styles.infoSneaker}>
           <div className={styles.iconArea}>
@@ -15,7 +15,12 @@ export const Card = ({ price, describe, photo }) => {
           <span className={styles.name}>{describe}</span>
         </div>
         <div className={styles.costs}>
-          <Icon className={styles.btnPlus} name='btnPlus' />
+          <div onClick={addInCart} id={id}>
+            <Icon
+              className={styles.btnChecked}
+              name={selected ? 'btnChecked' : 'btnPlus'}
+            />
+          </div>
           <span className={styles.price}>ЦЕНА:</span>
           <span className={styles.priceLabel}>{formatMoney(price)}</span>
         </div>

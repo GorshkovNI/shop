@@ -21,7 +21,7 @@ export const CartFooter = () => {
           </span>
         </li>
       </ul>
-      <Button className={styles.button} size='big'>
+      <Button className={styles.button} size='big' vector='right'>
         Оформить
       </Button>
     </div>

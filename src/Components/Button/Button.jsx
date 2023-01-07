@@ -4,8 +4,7 @@ import styles from './Button.module.css';
 import cn from 'classnames';
 
 export const Button = ({
-  leftIcon,
-  rigthIcon = true,
+  vector,
   className,
   size,
   mode = 'primary',
@@ -17,10 +16,14 @@ export const Button = ({
     [styles.big]: size === 'big',
   });
 
+  const vectorArrow = cn(styles.icon, {
+    [styles.leftSide]: vector === 'left',
+    [styles.rightSide]: vector === 'right',
+  });
+
   return (
     <button className={buttonClassName}>
-      {leftIcon && <Icon />}
-      {rigthIcon && <Icon />}
+      {vector && <Icon className={vectorArrow} name='arrow' />}
       {children}
     </button>
   );

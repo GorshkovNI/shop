@@ -99,8 +99,9 @@
     color: #000000;
 }
 
-.btnPlus{
+.btnChecked{
     position: absolute;
     right: 0;
     cursor: pointer;
+    transition: all 1.5s ease-in;
 }

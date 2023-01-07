@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Provider } from 'react-redux';
 import './App.css';
-import { Header } from './Components/Header/Header';
+import { HeaderContainer } from './Components/Header/HeaderContaienr';
 import { Body } from './module/Body/Body';
 import { Cart } from './module/Cart/Cart';
 import { Search } from './module/Search/Search';
 import { store } from './store';
 
 function App() {
-  const [cartVisible, setCartVisible] = useState(true);
+  const [cartVisible, setCartVisible] = useState(false);
 
   const handleCartVisible = () => {
     setCartVisible(!cartVisible);
@@ -17,9 +17,9 @@ function App() {
   return (
     <Provider store={store}>
       <div className='App'>
-        {cartVisible && <Cart />}
+        {cartVisible && <Cart onCartVisible={handleCartVisible} />}
         <div className='wrapper'>
-          <Header onCartVisible={handleCartVisible} />
+          <HeaderContainer onCartVisible={handleCartVisible} />
           <Search />
           <Body />
         </div>

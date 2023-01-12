@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getAllCart } from '../../store/selector/selector';
-import { addNewSneaker, setSneakers } from '../../store/slice/sneaker';
+
+import { getAllCart, getAllSneakers } from '../../store/selector/selector';
+import { addNewSneaker } from '../../store/slice/sneaker';
 import { Card } from './Card';
 
 export const CardContainer = () => {
-  const [items, setItems] = useState([]);
+  const sneakers = useSelector(getAllSneakers);
   const dispath = useDispatch();
-
-  useEffect(() => {
-    fetch('https://63b944c03329392049ef1a2c.mockapi.io/sneakers')
-      .then((res) => {
-        return res.json();
-      })
-      .then((json) => setItems(json));
-
-    dispath(setSneakers({ sneakers: items }));
-  }, []);
 
   const addInCart = (e) => {
     dispath(addNewSneaker({ id: e.currentTarget.id }));
@@ -26,7 +17,7 @@ export const CardContainer = () => {
 
   return (
     <>
-      {items.map((item) => {
+      {sneakers.map((item) => {
         return (
           <Card
             key={item.id}

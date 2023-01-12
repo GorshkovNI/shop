@@ -1,10 +1,10 @@
 import { combineReducers } from '@reduxjs/toolkit';
 import sneaker from '../slice/sneaker';
-import cart from '../slice/cart';
+//import cart from '../slice/cart';
 
 const reducer = combineReducers({
   sneaker,
-  cart,
+  //cart,
 });
 
 export default reducer;

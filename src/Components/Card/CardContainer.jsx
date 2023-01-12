@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllCart } from '../../store/selector/selector';
-import { addNewSneaker } from '../../store/slice/cart';
+import { addNewSneaker, setSneakers } from '../../store/slice/sneaker';
 import { Card } from './Card';
 
 export const CardContainer = () => {
@@ -14,6 +14,8 @@ export const CardContainer = () => {
         return res.json();
       })
       .then((json) => setItems(json));
+
+    dispath(setSneakers({ sneakers: items }));
   }, []);
 
   const addInCart = (e) => {

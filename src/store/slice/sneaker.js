@@ -3,6 +3,8 @@ import { SNEAKERS } from '../../data/Data';
 const initialState = {
   sneakers: SNEAKERS,
   addedSneaker: [],
+  cart: [],
+  likedSneakers: [],
 };
 
 const sneakersSlice = createSlice({
@@ -25,7 +27,30 @@ const sneakersSlice = createSlice({
           ))
         : (state.addedSneaker = [...state.addedSneaker, id]);
     },
+
+    cartSneaker(state, action) {
+      const id = action.payload.id;
+      if (state.cart.findIndex((item) => item.id === id) === -1) {
+        const sneaker = state.sneakers.findIndex((item) => item.id === id);
+        state.cart.push(state.sneakers[sneaker]);
+        return;
+      }
+      state.cart = state.cart.filter((item) => item.id !== id);
+    },
+
+    likeSneakers(state, action) {
+      const id = action.payload.id;
+      if (state.likedSneakers.findIndex((item) => item?.id === id) === -1) {
+        const sneaker = state.sneakers.findIndex((item) => item.id === id);
+        state.likedSneakers.push(state.sneakers[sneaker]);
+        return;
+      }
+      state.likedSneakers = state.likedSneakers.filter(
+        (item) => item.id !== id
+      );
+    },
   },
 });
-export const { setSneakers, addNewSneaker } = sneakersSlice.actions;
+export const { setSneakers, addNewSneaker, cartSneaker, likeSneakers } =
+  sneakersSlice.actions;
 export default sneakersSlice.reducer;

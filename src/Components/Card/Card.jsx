@@ -3,13 +3,22 @@ import styles from './Card.module.css';
 import { Icon } from '../Icons/Icon';
 import { formatMoney } from '../../utils/formatMoney';
 
-export const Card = ({ id, price, describe, photo, addInCart, selected }) => {
+export const Card = ({
+  id,
+  price,
+  describe,
+  photo,
+  addInCart,
+  selected,
+  like,
+  likeSneaker,
+}) => {
   return (
     <div className={styles._} id={id}>
       <div className={styles.wrapper}>
         <div className={styles.infoSneaker}>
-          <div className={styles.iconArea}>
-            <Icon className={styles.like} name='heart' />
+          <div className={styles.iconArea} id={id} onClick={likeSneaker}>
+            <Icon className={styles.like} name={like ? 'like' : 'heart'} />
           </div>
           <img src={photo} className={styles.sneaker} />
           <span className={styles.name}>{describe}</span>

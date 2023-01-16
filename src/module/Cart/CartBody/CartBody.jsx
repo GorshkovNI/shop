@@ -2,8 +2,6 @@ import React from 'react';
 import { CardInCart } from '../../../Components/CardInCart/CardInCart';
 import styles from './CartBody.module.css';
 import cn from 'classnames';
-// import { useSelector } from 'react-redux';
-// import { getAllCart } from '../../../store/selector/selector';
 
 export const CartBody = ({ className }) => {
   return (

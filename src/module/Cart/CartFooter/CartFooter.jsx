@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../../../Components/Button/Button';
 import styles from './CartFooter.module.css';
 
-export const CartFooter = () => {
+export const CartFooter = ({sumOrder}) => {
   return (
     <div className={styles._}>
       <ul className={styles.cartTotal}>
@@ -10,14 +10,7 @@ export const CartFooter = () => {
           <span>Итого:</span>
           <div></div>
           <span>
-            <b>12 999 руб.</b>
-          </span>
-        </li>
-        <li>
-          <span>Налог 5%:</span>
-          <div></div>
-          <span>
-            <b>1074 руб.</b>
+            <b>{sumOrder || 0} руб.</b>
           </span>
         </li>
       </ul>

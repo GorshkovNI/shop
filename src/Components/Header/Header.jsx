@@ -17,11 +17,10 @@ export const Header = ({ money = 0, onCartVisible }) => {
           </div>
         </div>
         <div className={styles.rigthPart}>
-          <div className={styles.basket}>
+          <div className={styles.basket} onClick={onCartVisible}>
             <Icon
               name='cart'
               className={cn(styles.icon, styles.cart)}
-              onClick={onCartVisible}
             />
             <span className={styles.money}>{formatMoney(money)}</span>
           </div>

@@ -7,6 +7,8 @@ import { ReactComponent as btnRemove } from './btnRemove.svg';
 import { ReactComponent as Arrow } from './arrow.svg';
 import { ReactComponent as btnChecked } from './btnChecked.svg';
 import { ReactComponent as Like } from './like.svg';
+import { ReactComponent as Box } from './box.svg';
+import { ReactComponent as ArrowBack } from './arrowBack.svg';
 
 export const iconsTypes = {
   heart: Heart,
@@ -18,4 +20,6 @@ export const iconsTypes = {
   arrow: Arrow,
   btnChecked: btnChecked,
   like: Like,
+  box: Box,
+  arrowBack: ArrowBack,
 };

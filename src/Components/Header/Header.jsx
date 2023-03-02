@@ -4,6 +4,7 @@ import logo from '../Icons/Icon/header.png';
 import { Icon } from '../Icons/Icon';
 import { formatMoney } from '../../utils/formatMoney';
 import cn from 'classnames';
+import { NavLink } from 'react-router-dom';
 
 export const Header = ({ money = 0, onCartVisible }) => {
   return (
@@ -18,13 +19,12 @@ export const Header = ({ money = 0, onCartVisible }) => {
         </div>
         <div className={styles.rigthPart}>
           <div className={styles.basket} onClick={onCartVisible}>
-            <Icon
-              name='cart'
-              className={cn(styles.icon, styles.cart)}
-            />
+            <Icon name='cart' className={cn(styles.icon, styles.cart)} />
             <span className={styles.money}>{formatMoney(money)}</span>
           </div>
-          <Icon name='heart' className={styles.icon} />
+          <NavLink to='/bookmarks'>
+            <Icon name='heart' className={styles.icon} />
+          </NavLink>
           <Icon name='user' className={styles.icon} />
         </div>
       </div>

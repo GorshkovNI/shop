@@ -9,10 +9,10 @@ export const Button = ({
   size,
   mode = 'primary',
   children,
+  onClick,
 }) => {
   const buttonClassName = cn(styles._, className, {
     [styles.primary]: mode === 'primary',
-
     [styles.big]: size === 'big',
   });
 
@@ -22,7 +22,7 @@ export const Button = ({
   });
 
   return (
-    <button className={buttonClassName}>
+    <button className={buttonClassName} onClick={onClick}>
       {vector && <Icon className={vectorArrow} name='arrow' />}
       {children}
     </button>

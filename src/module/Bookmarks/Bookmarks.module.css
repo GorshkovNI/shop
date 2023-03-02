@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 60px;
+}
+.arrowBack{
+    width: 35px;
+    height: 35px;
+    margin-right: 21px;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+.arrowBack:hover{
+    box-shadow: 4px 6px 13px -3px rgba(34, 60, 80, 0.2);
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    gap: 2.5rem;
+    margin: 2rem 3.75rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}

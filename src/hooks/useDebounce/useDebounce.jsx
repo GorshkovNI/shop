@@ -1,0 +1,17 @@
+import { useMemo, useState } from 'react';
+
+const useDebounce = (value, delay) => {
+  const [debounceValue, setDebounceValue] = useState(value);
+
+  useMemo(() => {
+    const handle = setTimeout(() => {
+      setDebounceValue(value);
+    }, delay);
+    return () => {
+      clearTimeout(handle);
+    };
+  }, [value]);
+  return debounceValue;
+};
+
+export default useDebounce;

@@ -10,13 +10,15 @@ export const Header = ({ money = 0, onCartVisible }) => {
   return (
     <header className={styles._}>
       <div className={styles.header}>
-        <div className={styles.logoArea}>
-          <img className={styles.logo} src={logo} />
-          <div className={styles.aboutShop}>
-            <span className={styles.nameShop}>SNEAKERS</span>
-            <span className={styles.describe}>Магазин лучших кроссовок</span>
+        <NavLink to='/' className={styles.nav}>
+          <div className={styles.logoArea}>
+            <img className={styles.logo} src={logo} />
+            <div className={styles.aboutShop}>
+              <span className={styles.nameShop}>SNEAKERS</span>
+              <span className={styles.describe}>Магазин лучших кроссовок</span>
+            </div>
           </div>
-        </div>
+        </NavLink>
         <div className={styles.rigthPart}>
           <div className={styles.basket} onClick={onCartVisible}>
             <Icon name='cart' className={cn(styles.icon, styles.cart)} />

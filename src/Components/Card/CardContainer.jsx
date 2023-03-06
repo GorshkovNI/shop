@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import {
-  getAllSneakers,
+  getOnlyLikedId,
   getSelectedSneakers,
 } from '../../store/selector/selector';
 import {
@@ -12,10 +12,7 @@ import {
 } from '../../store/slice/sneaker';
 import { Card } from './Card';
 
-export const CardContainer = () => {
-  const [likedSneaker, setLikedSneaker] = useState([]);
-
-  const sneakers = useSelector(getAllSneakers);
+export const CardContainer = ({ data }) => {
   const dispath = useDispatch();
 
   const addInCart = (e) => {
@@ -24,25 +21,21 @@ export const CardContainer = () => {
   };
 
   const likeSneaker = (e) => {
-    likedSneaker.includes(e.currentTarget.id)
-      ? setLikedSneaker(
-          likedSneaker.filter((item) => item !== e.currentTarget.id)
-        )
-      : setLikedSneaker([...likedSneaker, e.currentTarget.id]);
     dispath(likeSneakers({ id: e.currentTarget.id }));
   };
 
+  const likedCard = useSelector(getOnlyLikedId);
   const selectedSneaker = useSelector(getSelectedSneakers);
 
   return (
     <>
-      {sneakers.map((item) => {
+      {data?.map((item) => {
         return (
           <Card
             key={item.id}
             id={item.id}
             selected={selectedSneaker.includes(item.id)}
-            like={likedSneaker.includes(item.id)}
+            like={likedCard?.includes(item.id)}
             describe={item.describe}
             price={item.price}
             photo={item.photo}

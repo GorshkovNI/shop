@@ -5,6 +5,7 @@ const initialState = {
   addedSneaker: [],
   cart: [],
   likedSneakers: [],
+  search: '',
 };
 
 const sneakersSlice = createSlice({
@@ -49,8 +50,20 @@ const sneakersSlice = createSlice({
         (item) => item.id !== id
       );
     },
+
+    setSearch(state, action) {
+      const key = action.payload.key;
+      const value = action.payload.value;
+      console.log(key, ' ', value);
+      state[key] = value;
+    },
   },
 });
-export const { setSneakers, addNewSneaker, cartSneaker, likeSneakers } =
-  sneakersSlice.actions;
+export const {
+  setSneakers,
+  addNewSneaker,
+  cartSneaker,
+  likeSneakers,
+  setSearch,
+} = sneakersSlice.actions;
 export default sneakersSlice.reducer;

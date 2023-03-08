@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="773b7445-5483-41fc-9413-9ea014f0c2c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Icons/Icon/sadSmile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/CardOrder/CardOrder.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/CardOrder/CardOrder.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Icons/Icon/unhappy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Profile/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Profile/Profile.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/orders/orders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/Button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Icons/Icon/IconTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Icons/Icon/IconTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.module.css" afterDir="false" />
@@ -35,24 +40,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project/sneakerShop/src/Components/Icons/Icon&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\Project\\sneakerShop\\node_modules\\prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Project/sneakerShop/src/Pages/Profile",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\Project\\sneakerShop\\node_modules\\prettier",
+    "ts.external.directory.path": "D:\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\sneakerShop\src\Pages\Profile" />
       <recent name="D:\Project\sneakerShop\src\Components\Icons\Icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project\sneakerShop\src\Components\Icons\Icon" />
+      <recent name="D:\Project\sneakerShop\src\Pages\Profile" />
       <recent name="D:\Project\sneakerShop\src\Pages" />
     </key>
   </component>
@@ -65,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677230959366</updated>
       <workItem from="1677230960435" duration="2165000" />
-      <workItem from="1678008185695" duration="11727000" />
+      <workItem from="1678008185695" duration="15499000" />
     </task>
     <servers />
   </component>

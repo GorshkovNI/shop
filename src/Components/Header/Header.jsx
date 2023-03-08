@@ -27,7 +27,9 @@ export const Header = ({ money = 0, onCartVisible }) => {
           <NavLink to='/bookmarks'>
             <Icon name='heart' className={styles.icon} />
           </NavLink>
-          <Icon name='user' className={styles.icon} />
+          <NavLink to='/profile'>
+            <Icon name='user' className={styles.icon} />
+          </NavLink>
         </div>
       </div>
       <div className={styles.line}></div>

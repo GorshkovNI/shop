@@ -8,6 +8,7 @@ import { Cart } from './module/Cart/Cart';
 import { store } from './store';
 import { Bookmarks } from './Pages/Bookmarks/Bookmarks';
 import cn from 'classnames';
+import { Profile } from './Pages/Profile/Profile';
 
 function App() {
   const [cartVisible, setCartVisible] = useState(false);
@@ -32,6 +33,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Body />} />
               <Route path='/bookmarks' element={<Bookmarks />} />
+              <Route path='/profile' element={<Profile />} />
             </Routes>
           </div>
         </div>

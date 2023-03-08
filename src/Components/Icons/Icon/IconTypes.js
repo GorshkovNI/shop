@@ -10,6 +10,7 @@ import { ReactComponent as Like } from './like.svg';
 import { ReactComponent as Box } from './box.svg';
 import { ReactComponent as ArrowBack } from './arrowBack.svg';
 import { ReactComponent as SadSmile } from './sadSmile.svg';
+import { ReactComponent as Unhappy } from './unhappy.svg';
 
 export const iconsTypes = {
   heart: Heart,
@@ -24,4 +25,5 @@ export const iconsTypes = {
   box: Box,
   arrowBack: ArrowBack,
   sadSmile: SadSmile,
+  unhappy: Unhappy,
 };

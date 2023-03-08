@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
     border-radius: 1rem;
     border: 0;
     cursor: pointer;
@@ -14,6 +15,10 @@
 
 .big{
     width: 20.3rem;
+}
+
+.middle{
+    width: 245px;
 }
 
 .primary{
@@ -34,5 +39,9 @@
 
 .rightSide{
     position: absolute;
-    right: 2rem;
+    right: 1.5rem;
+}
+
+.text{
+    margin-left: 7px;
 }

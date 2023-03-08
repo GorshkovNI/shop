@@ -13,6 +13,7 @@ export const Button = ({
 }) => {
   const buttonClassName = cn(styles._, className, {
     [styles.primary]: mode === 'primary',
+    [styles.middle]: size === 'middle',
     [styles.big]: size === 'big',
   });
 
@@ -23,8 +24,9 @@ export const Button = ({
 
   return (
     <button className={buttonClassName} onClick={onClick}>
-      {vector && <Icon className={vectorArrow} name='arrow' />}
-      {children}
+      {vector == 'left' && <Icon className={vectorArrow} name='arrow' />}
+      <div className={styles.text}>{children}</div>
+      {vector == 'right' && <Icon className={vectorArrow} name='arrow' />}
     </button>
   );
 };

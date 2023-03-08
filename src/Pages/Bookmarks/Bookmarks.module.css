@@ -1,5 +1,7 @@
 .wrapper{
-    height: 100vh;
+    height: 80vh;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 .header{
@@ -27,4 +29,36 @@
     margin: 2rem 3.75rem;
     padding-bottom: 2rem;
     flex-wrap: wrap;
+}
+
+.bookmarks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.bookmarksArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sadSmile{
+
+}
+
+.text1{
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 24px;
+    padding-bottom: 11px;
+}
+
+.text2{
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.4;
+    margin-bottom: 70px;
 }

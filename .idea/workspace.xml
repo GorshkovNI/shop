@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="773b7445-5483-41fc-9413-9ea014f0c2c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Preloader/Preloader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Preloader/Preloader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useDebounce/useDebounce.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Icons/Icon/sadSmile.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Card/CardContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Card/CardContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Input/Input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/Body/Body.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/Body/Body.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/Body/Body.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/Body/Body.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/Bookmarks/Bookmarks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/Bookmarks/Bookmarks.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/Cart/Cart.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/Cart/Cart.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/Cart/CartBody/CartBody.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/Cart/CartBody/CartBody.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/Cart/CartFooter/CartFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/Cart/CartFooter/CartFooter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/module/Search/Search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/selector/selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selector/selector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/slice/sneaker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slice/sneaker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Button/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/Button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Icons/Icon/IconTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Icons/Icon/IconTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Bookmarks/Bookmarks.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +35,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Project/sneakerShop/src/Components/Icons/Icon",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "D:\\Project\\sneakerShop\\node_modules\\prettier",
-    "ts.external.directory.path": "D:\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project/sneakerShop/src/Components/Icons/Icon&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\Project\\sneakerShop\\node_modules\\prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Project\sneakerShop\src\Components\Icons\Icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\sneakerShop\src\Components\Icons\Icon" />
       <recent name="D:\Project\sneakerShop\src\Pages" />
     </key>
   </component>
@@ -82,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677230959366</updated>
       <workItem from="1677230960435" duration="2165000" />
-      <workItem from="1678008185695" duration="6480000" />
+      <workItem from="1678008185695" duration="11727000" />
     </task>
     <servers />
   </component>

@@ -5,10 +5,10 @@ import styles from './Bookmarks.module.css';
 import { Icon } from '../../Components/Icons/Icon';
 import { CardContainer } from '../../Components/Card/CardContainer';
 import { useNavigate } from 'react-router-dom';
+import { Button } from '../../Components/Button/Button';
 
 export const Bookmarks = () => {
   const likedSneaker = useSelector(getAllLikedSneakers);
-
   const navigate = useNavigate();
 
   return (
@@ -19,11 +19,26 @@ export const Bookmarks = () => {
           className={styles.arrowBack}
           onClick={() => navigate(-1)}
         />
-        <h1>Мои покупки</h1>
+        <h1>Мои закладки</h1>
       </div>
-      <div className={styles.cards}>
-        <CardContainer data={likedSneaker} />
-      </div>
+      {likedSneaker.length !== 0 ? (
+        <div className={styles.cards}>
+          <CardContainer data={likedSneaker} />
+        </div>
+      ) : (
+        <div className={styles.bookmarks}>
+          <div className={styles.bookmarksArea}>
+            <Icon name='sadSmile' className={styles.sadSmile} />
+            <span className={styles.text1}>Закладок нет :(</span>
+            <span className={styles.text2}>
+              Вы ничего не добавляли в закладки
+            </span>
+            <Button vector='left' size='middle'>
+              Вернуться назад
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
